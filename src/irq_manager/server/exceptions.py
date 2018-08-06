@@ -1,0 +1,3 @@
+class UnableToStart(IOError):
+
+    pass
