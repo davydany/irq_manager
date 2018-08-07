@@ -124,6 +124,16 @@ You can distribute individual wheel files of this entire project by running:
   make wheel
 
 
+What this does is simply run:
+
+.. code:: bash
+
+  python setup.py bdist_wheel
+
+The generated **whl** file will be generated and left in **./dist** as 
+**irq_manager-0.1.0-py2.py3-none-any.whl**.
+
+
 Automating
 ----------
 
