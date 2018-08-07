@@ -38,7 +38,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    description="Views and Manage CPU Affinity for Interrupt Requests",
+    description="View and Manage CPU Affinity for Interrupt Requests",
     entry_points={
         'console_scripts': [
             'irq_manager=irq_manager.cli:irq_manager',
