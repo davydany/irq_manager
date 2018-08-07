@@ -1,0 +1,11 @@
+[Unit]
+Description=Launch IRQ Manager's API Endpoint to be queried by a client from a remote system.
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/irq_manager/venv/bin/irq_manager serve 0.0.0.0 8080
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target

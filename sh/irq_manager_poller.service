@@ -1,0 +1,11 @@
+[Unit]
+Description=Launch IRQ Manager's Poller to poll for interrupts to the system every 60 seconds
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/irq_manager/venv/bin/irq_manager poll 60
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
