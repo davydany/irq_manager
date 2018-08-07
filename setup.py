@@ -14,6 +14,9 @@ with open('HISTORY.rst') as history_file:
 requirements = [
     'Click>=6.0', 
     'Flask>=1.0',
+    'mongoengine>=0.15',
+    'pymongo>=3.7',
+    'terminaltables>=3.1.0'
 ]
 
 setup_requirements = [ ]
@@ -38,8 +41,8 @@ setup(
     description="Views and Manage CPU Affinity for Interrupt Requests",
     entry_points={
         'console_scripts': [
-            'irq_manager_server=irq_manager.cli:irq_manager_server',
-            'irq_manager_client=irq_manager.cli:irq_manager_client',
+            'irq_manager=irq_manager.cli:irq_manager',
+            'irq_client=irq_manager.cli:irq_client',
         ],
     },
     install_requires=requirements,
